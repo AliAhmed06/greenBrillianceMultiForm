@@ -100,7 +100,9 @@ const SimpleMultiStepForm = ({ showStepNumber }) => {
         "zip": formData.zip,
         "solar_considering": formData.why_solar
       }
-      const response =  await axios.post("https://api.solarenergypros.org/api/solar_inquiries", data);
+      // const response =  await axios.post("https://api.solarenergypros.org/api/solar_inquiries", data);
+      const response =  await axios.post(`${process.env.NEXT_PUBLIC_DOMAIN_NAME}/api/multiForm`, data);
+
       console.log("ali response is = ", response);
     } catch (error) {
       console.log("there is some error/exception", error);

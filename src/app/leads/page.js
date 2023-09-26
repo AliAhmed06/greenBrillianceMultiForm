@@ -4,13 +4,12 @@ import Link from "next/link";
 import React from "react";
 
 const getData = async () => {  
-  let response = await fetch("http://api.solarenergypros.org/api/solar_inquiries", { cache: 'no-store' });
-  // let response = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN_NAME}/api/simpleForm`, { cache: 'no-store' });
-  // let response = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN_NAME}/api/simpleForm`, { cache: 'no-store' });
-
+  // let response = await fetch("http://api.solarenergypros.org/api/solar_inquiries", { cache: 'no-store' });
+  let response = await fetch(`${process.env.DOMAIN_NAME}/api/multiForm`, { cache: 'no-store' });
+  
+  console.log(response);
   response = await response.json();
-  // response = response.meals;
-
+  
   return response.formData;
 };
 
@@ -29,21 +28,25 @@ const page = async () => {
               <th>zip</th>
               <th>Home Owner</th>
               <th>Address</th>
-              <th>Message</th>
+              <th>Home Type</th>
+              <th>Monthly Bill</th>
+              <th>Shade</th>
             </tr>
           </thead>
           <tbody>
             {data?.map((item) => (
               <tr key={item.id}>
                 <td>
-                  {item.full_name}
+                  {item.first_name + " " + item.last_name}
                 </td>
                 <td>{item.email}</td>
                 <td>{item.phone}</td>
                 <td>{item.zip}</td>
                 <td>{item.is_home_owner}</td>
-                <td>{item.address}</td>
-                <td>{item.message}</td>                
+                <td>{item.address}</td>                
+                <td>{item.type_of_home}</td>                
+                <td>{item.average_monthly_bill}</td>                
+                <td>{item.shade}</td>                
               </tr>
             ))}
           </tbody>

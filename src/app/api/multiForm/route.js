@@ -1,12 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
-import SimpleForm from "@/models/simpleForm";
+import MultiForm from "@/models/multiForm";
 import { connect } from "@/dbConfig/dbConfig";
 
 connect();
 
 export async function GET(NextRequest){
     try {
-        const formData = await SimpleForm.find(); 
+        const formData = await MultiForm.find(); 
 
         return NextResponse.json({
           message: "",
@@ -23,19 +23,26 @@ export async function GET(NextRequest){
     }
 }
 
+
 export async function POST(NextRequest){
     try {
         const reqBody = await NextRequest.json();
-        const {zip, is_home_owner, address, email, full_name, phone, message} = reqBody;
+        const {address, solar_considering, zip, shade, phone, average_monthly_bill, last_name, is_home_owner, type_of_home, first_name, email, electricity_provider, credit_score} = reqBody;
         
-        const newForm = new SimpleForm({
-            zip,
-            is_home_owner,
+        const newForm = new MultiForm({
             address,
-            email,
-            full_name,
+            solar_considering,
+            zip,
+            shade,
             phone,
-            message
+            average_monthly_bill,
+            last_name,
+            is_home_owner,
+            type_of_home,
+            first_name,
+            email,
+            electricity_provider,
+            credit_score
         })
 
         // Save product in db

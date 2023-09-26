@@ -23,9 +23,9 @@ const Page = () => {
 
   return (
     <div className='min-h-screen font-Sagoe'>      
-      {/* <SimpleMultiStepForm showStepNumber={true} /> */}
+      <SimpleMultiStepForm showStepNumber={true} />
 
-      { showForm === true ? <SingleStepForm setShowForm={setShowForm} /> : <StepFinal /> } 
+      {/* { showForm === true ? <SingleStepForm setShowForm={setShowForm} /> : <StepFinal /> }  */}
       
 
       <div className='mt-10'>
