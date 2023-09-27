@@ -4,13 +4,13 @@ import Link from "next/link";
 import React from "react";
 
 const getData = async () => {  
-  // let response = await fetch("http://api.solarenergypros.org/api/solar_inquiries", { cache: 'no-store' });
-  let response = await fetch(`${process.env.DOMAIN_NAME}/api/multiForm`, { cache: 'no-store' });
+  let response = await fetch("http://api.solarenergypros.org/api/solar_inquiries", { cache: 'no-store' });
+  // let response = await fetch(`${process.env.DOMAIN_NAME}/api/multiForm`, { cache: 'no-store' });
   
-  console.log(response);
-  response = await response.json();
+  // console.log(response);
+  // response = await response.json();
   
-  return response.formData;
+  // return response.formData;
 };
 
 const page = async () => {
