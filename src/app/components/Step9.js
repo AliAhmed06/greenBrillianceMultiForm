@@ -21,7 +21,7 @@ const Step9 = ({ formData, handleChangeInput, handleNextStep, handlePrevStep }) 
   // console.log(address.length);
   return (
     <div className="flex flex-col items-center justify-center">
-      <h3 className="text-[#ffd75d] font-bold text-3xl lg:text-6xl uppercase mt-10">Congratulations <br /> you pre-qualify!</h3>
+      <h3 className="text-white font-bold text-3xl lg:text-6xl uppercase mt-10">Congratulations <br /> you pre-qualify!</h3>
 
       <h3 className='mt-10 font-bold text-white text-3xl'>
         Where Should We Send Your Quote(S)?
@@ -34,7 +34,7 @@ const Step9 = ({ formData, handleChangeInput, handleNextStep, handlePrevStep }) 
         value={formData.email}
         onChange={(e) => handleChangeInput("email", e.target.value)  }
         />
-        { emailError !== "" && <p className="text-red-500 font-semibold">{emailError}</p> }
+        { emailError !== "" && <p className="text-[#F26539] font-semibold">{emailError}</p> }
       <button
         className="w-[320px] md:w-[500px] stepButton2"
         onClick={ () => Step9Handler() }

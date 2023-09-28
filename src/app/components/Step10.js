@@ -112,7 +112,7 @@ const Step10 = ({ formData, handleChangeInput, handleSubmitFormData, handlePrevS
   // console.log(address.length);
   return (
     <div className="flex flex-col items-center justify-center">
-      <h3 className="text-[#ffd75d] font-bold text-3xl lg:text-6xl uppercase mt-10">Congratulations <br /> you pre-qualify!</h3>
+      <h3 className="text-white font-bold text-3xl lg:text-6xl uppercase mt-10">Congratulations <br /> you pre-qualify!</h3>
 
       <h3 className='mt-10 font-bold text-white text-3xl'>
         Where Should We Send Your Quote(S)?

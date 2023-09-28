@@ -28,22 +28,22 @@
 }
 
 .stepButton0{
-    @apply bg-white w-[300px] font-SagoeBold py-3 px-5 hover:bg-yellow-400 font-bold lg:text-2xl rounded-xl text-[#f8ba4d] hover:text-white mt-3
+    @apply bg-white w-[300px] font-SagoeBold py-3 px-5 hover:bg-[#F26539] font-bold lg:text-2xl rounded-xl text-[#F26539] hover:text-white mt-3
 }
 .stepButton1{
-    @apply w-[300px] py-3 px-5 font-SagoeBold font-bold lg:text-xl rounded-xl  mt-3 bg-white hover:bg-yellow-400 text-[#235c94] hover:text-white
+    @apply w-[300px] py-3 px-5 font-SagoeBold font-bold lg:text-xl rounded-xl  mt-3 bg-white hover:bg-[#F26539] text-[#0E9B49] hover:text-white
 }
 
 .stepButton1Active{
-    @apply w-[300px] py-3 px-5 font-SagoeBold font-bold lg:text-xl rounded-xl  mt-3 bg-yellow-400 text-white
+    @apply w-[300px] py-3 px-5 font-SagoeBold font-bold lg:text-xl rounded-xl  mt-3 bg-[#F26539] text-white
 }
 
 .stepButton2{
-    @apply  py-3 px-5 font-bold font-SagoeBold text-xl rounded-xl  mt-3 hover:bg-yellow-400 text-[#235c94] hover:text-white bg-white
+    @apply  py-3 px-5 font-bold font-SagoeBold text-xl rounded-xl  mt-3 hover:bg-[#F26539] text-[#0E9B49] hover:text-white bg-white
 }
 
 .stepButton2Active{
-    @apply  py-3 px-5 font-bold text-xl font-SagoeBold rounded-xl  mt-3 bg-yellow-400 text-white 
+    @apply  py-3 px-5 font-bold text-xl font-SagoeBold rounded-xl  mt-3 bg-[#F26539] text-white 
 }
 
 .stepField{

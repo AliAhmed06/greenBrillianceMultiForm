@@ -6,8 +6,8 @@ const Footer = () => {
     <div className='bg-white text-black grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-10 py-10 lg:px-28 lg:py-20 gap-10'>
         <div className='lg:col-span-2 lg:px-10'>
             <div className='text-4xl font-extrabold flex flex-col items-center w-fit gap-1 mb-5'>
-                <h2 className='text-[#153456] font-Teko'>About Us</h2>
-                <div className='bg-[#f8ba4d] h-[2px] w-[60px]'></div>
+                <h2 className='text-[#0E9B49] font-Teko'>About Us</h2>
+                <div className='bg-[#F26539] h-[2px] w-[60px]'></div>
             </div>
             <p>greenbrilliance exists to serve homeowners who are looking to reduce the cost of powering their homes, but are unsure where to start their research. We have done the hard work for you by partnering with the top solar companies in your area. Then by answering just a few questions, we will match you with the solar companies that are the best fit for you. We give you the control to make smart, informed decisions that will make going solar a gratifying experience.</p>
             <div className='flex gap-3 mt-5'>
@@ -20,8 +20,8 @@ const Footer = () => {
 
         <div className=''>
             <div className='text-4xl font-extrabold flex flex-col items-center w-fit gap-1 mb-5'>
-                <h2 className='text-[#153456] font-Teko'>Legal</h2>
-                <div className='bg-[#f8ba4d] h-[2px] w-[60px]'></div>
+                <h2 className='text-[#0E9B49] font-Teko'>Legal</h2>
+                <div className='bg-[#F26539] h-[2px] w-[60px]'></div>
             </div>
             <div className='flex flex-col gap-3 mt-5'>
                 <Link href={"/policy"} className='flex items-center justify-start gap-3'>                    
@@ -41,8 +41,8 @@ const Footer = () => {
 
         <div className=''>
             <div className='text-4xl font-extrabold flex flex-col items-center w-fit gap-1 mb-5'>
-                <h2 className='text-[#153456] font-Teko'>Contact Us</h2>
-                <div className='bg-[#f8ba4d] h-[2px] w-[60px]'></div>
+                <h2 className='text-[#0E9B49] font-Teko'>Contact Us</h2>
+                <div className='bg-[#F26539] h-[2px] w-[60px]'></div>
             </div>
             <div className='flex flex-col gap-3'>
                 <span>+1 757-559-1931</span>

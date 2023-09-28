@@ -131,8 +131,8 @@ const SimpleMultiStepForm = ({ showStepNumber }) => {
               />
             )}
             <div
-              className={`w-7 md:w-9 h-7 md:h-9 flex justify-center items-center drop-shadow-lg text-[#865bf4] rounded-full ${
-                parseInt(item) + 1 === parseInt(step) ? 'bg-yellow-400' : 'bg-white'
+              className={`w-7 md:w-9 h-7 md:h-9 flex justify-center items-center drop-shadow-lg text-[#0E9B49] rounded-full ${
+                parseInt(item) + 1 === parseInt(step) ? 'bg-[#F26539] text-white' : 'bg-white'
               }`}
             >
               {parseInt(item) + 1}

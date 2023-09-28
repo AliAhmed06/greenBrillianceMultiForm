@@ -28,12 +28,12 @@ const Step6 = ({ formData, handleChangeInput, handleNextStep, handlePrevStep }) 
           Why Are You Considering Going Solar?
         </h1>
         <p className="text-lg mt-5 w-[400px] text-center text-white mb-5 px-8 md:px-0">Modifications/expansions of existing solar systems must be handled by the original installer</p>              
-          <div className="gap-3 bg-white w-[320px] md:w-[450px] py-5 px-10 flex items-center justify-start rounded-t-xl text-[#235c94] font-semibold">
+          <div className="gap-3 bg-white w-[320px] md:w-[450px] py-5 px-10 flex items-center justify-start rounded-t-xl text-[#0E9B49] font-semibold">
             <input 
               defaultChecked={formData.why_solar[0] === "Save On Electricity Bills" ? true : false}
               type="checkbox" 
               name="whySolary" 
-              className="accent-yellow-400 focus:ring-yellow-500 w-4 h-4" 
+              className="accent-[#F26539] focus:ring-[#F26539] w-4 h-4" 
               value="Save On Electricity Bills"
               id="v1"
               />
@@ -41,7 +41,7 @@ const Step6 = ({ formData, handleChangeInput, handleNextStep, handlePrevStep }) 
             <label htmlFor="v1">Save On Electricity Bills</label>
           </div>
 
-          <div className="gap-3 bg-white w-[320px] md:w-[450px] py-5 px-10 flex items-center justify-start text-[#235c94] font-semibold">
+          <div className="gap-3 bg-white w-[320px] md:w-[450px] py-5 px-10 flex items-center justify-start text-[#0E9B49] font-semibold">
             <input 
               defaultChecked={formData.why_solar[1] === "Earn Tax Credits and Rebates" ? true : false}
               type="checkbox" 
@@ -53,7 +53,7 @@ const Step6 = ({ formData, handleChangeInput, handleNextStep, handlePrevStep }) 
             <label htmlFor="v2">Earn Tax Credits and Rebates</label>
           </div>
 
-          <div className="gap-3 bg-white w-[320px] md:w-[450px] py-5 px-10 flex items-center justify-start text-[#235c94] font-semibold">
+          <div className="gap-3 bg-white w-[320px] md:w-[450px] py-5 px-10 flex items-center justify-start text-[#0E9B49] font-semibold">
             <input 
               defaultChecked={formData.why_solar[2] === "Do My Part to Save The Environment" ? true : false}
               type="checkbox" 
@@ -65,7 +65,7 @@ const Step6 = ({ formData, handleChangeInput, handleNextStep, handlePrevStep }) 
             <label htmlFor="v3">Do My Part to Save The Environment</label>
           </div>
 
-          <div className="gap-3 bg-white w-[320px] md:w-[450px] py-5 px-10 flex items-center justify-start text-[#235c94] font-semibold rounded-b-xl">
+          <div className="gap-3 bg-white w-[320px] md:w-[450px] py-5 px-10 flex items-center justify-start text-[#0E9B49] font-semibold rounded-b-xl">
             <input 
               defaultChecked={formData.why_solar[3] === "I Want to Replace My Current System" ? true : false}
               type="checkbox" 

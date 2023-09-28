@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       
-      <body className="bg-[#235c94]">
+      <body className="bg-[#009d51]">
         <FacebookPixel />
         <ToastContainer />
         <Header />
