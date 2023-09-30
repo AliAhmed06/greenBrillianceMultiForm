@@ -98,19 +98,21 @@ const SimpleMultiStepForm = ({ showStepNumber }) => {
         "phone": formData.phone,
         "shade": formData.shade_measurement,
         "zip": formData.zip,
-        "solar_considering": formData.why_solar
+        "solar_considering": formData.why_solar,
+        "source": "green brilliance"
       }
       // const response =  await axios.post("https://api.solarenergypros.org/api/solar_inquiries", data);
-      const response =  await axios.post(`${process.env.NEXT_PUBLIC_DOMAIN_NAME}/api/multiForm`, data);
+      const response =  await axios.post("https://api.solarenergypros.org/api/green_brilliance_inquiries", data);
+      // const response =  await axios.post(`${process.env.NEXT_PUBLIC_DOMAIN_NAME}/api/multiForm`, data);
 
-      console.log("ali response is = ", response);
+      // console.log("ali response is = ", response);
     } catch (error) {
       console.log("there is some error/exception", error);
     }
   };
 
   useEffect(() => {
-    console.log(formData);
+    // console.log(formData);
   }, [formData]);
 
   // Section for render StepNumbers

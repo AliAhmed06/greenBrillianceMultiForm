@@ -4,13 +4,13 @@ import Link from "next/link";
 import React from "react";
 
 const getData = async () => {  
-  let response = await fetch("http://api.solarenergypros.org/api/solar_inquiries", { cache: 'no-store' });
+  let response = await fetch("https://api.solarenergypros.org/api/green_brilliance_inquiries", { cache: 'no-store' });
   // let response = await fetch(`${process.env.DOMAIN_NAME}/api/multiForm`, { cache: 'no-store' });
   
   // console.log(response);
-  // response = await response.json();
+  response = await response.json();
   
-  // return response.formData;
+  return response.solar_inquiries;
 };
 
 const page = async () => {
@@ -26,6 +26,7 @@ const page = async () => {
               <th>Email</th>
               <th>phone</th>
               <th>zip</th>
+              <th>source</th>
               <th>Home Owner</th>
               <th>Address</th>
               <th>Home Type</th>
@@ -42,6 +43,7 @@ const page = async () => {
                 <td>{item.email}</td>
                 <td>{item.phone}</td>
                 <td>{item.zip}</td>
+                <td>{item.source}</td>
                 <td>{item.is_home_owner}</td>
                 <td>{item.address}</td>                
                 <td>{item.type_of_home}</td>                
