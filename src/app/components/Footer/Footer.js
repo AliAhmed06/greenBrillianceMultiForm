@@ -9,7 +9,7 @@ const Footer = () => {
                 <h2 className='text-[#0E9B49] font-Teko'>About Us</h2>
                 <div className='bg-[#F26539] h-[2px] w-[60px]'></div>
             </div>
-            <p>greenbrilliance exists to serve homeowners who are looking to reduce the cost of powering their homes, but are unsure where to start their research. We have done the hard work for you by partnering with the top solar companies in your area. Then by answering just a few questions, we will match you with the solar companies that are the best fit for you. We give you the control to make smart, informed decisions that will make going solar a gratifying experience.</p>
+            <p>Homes and businesses, both big and small, in Washington DC, Maryland, Virginia and Pennsylvania have trusted GreenBrilliance to go solar. Building end-to-end &apos;Made in USA&apos; solar systems in-house, from design and engineering to permitting to installation, monitoring and maintenance, we&apos;ve done things differently: ensuring true turnkey delivery. <br/> Eliminating the inefficiency of outsourced contractors. Refusing poor service. Contradicting expensive systems. We&apos;ve delivered superior quality systems, state-of-the-art technology and cost-savings in every installation. </p>
             <div className='flex gap-3 mt-5'>
                 <Link href={"https://www.facebook.com/greenbrilliance"} target='_blank'><img src="/images/facebook.png" alt="" className='h-[25px] w-[25px] object-contain' /></Link>
                 {/* <Link href={"#"}><img src="/images/twitter.png" alt="" className='h-[25px] w-[25px] object-contain' /></Link> */}
@@ -41,9 +41,9 @@ const Footer = () => {
                 <div className='bg-[#F26539] h-[2px] w-[60px]'></div>
             </div>
             <div className='flex flex-col gap-3'>
-                <span>+1 757-559-1931</span>
-                <span>admin@greenbrilliance.org</span>
-                <span>21110 Brookside ln, Sterling , VA, 20165</span>
+                <span>703-660-4767</span>
+                <span>irtiza@greenbrilliance.com</span>
+                <span>13655 Dulles Technology Drive, Suite 130 Herndon, VA 20171</span>
             </div>
         </div>
     </div>
