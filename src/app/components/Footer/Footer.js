@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
         </div>
 
-        <div className=''>
+        {/* <div className=''>
             <div className='text-4xl font-extrabold flex flex-col items-center w-fit gap-1 mb-5'>
                 <h2 className='text-[#0E9B49] font-Teko'>Legal</h2>
                 <div className='bg-[#F26539] h-[2px] w-[60px]'></div>
@@ -31,13 +31,9 @@ const Footer = () => {
                 <Link href={"/terms"} className='flex items-center justify-start gap-3'>                    
                     <img src="/images/footer-arrow.png" alt="" className='h-[20px]' />
                     <span className='font-bold text-lg'>Terms of Services</span>
-                </Link>
-                {/* <Link href={"#"} className='flex items-center justify-start gap-3'>                    
-                    <img src="/images/footer-arrow.png" alt="" className='h-[20px]' />
-                    <span className='font-bold text-lg'>CCPA</span>
-                </Link>                 */}
+                </Link>                
             </div>
-        </div>
+        </div> */}
 
         <div className=''>
             <div className='text-4xl font-extrabold flex flex-col items-center w-fit gap-1 mb-5'>

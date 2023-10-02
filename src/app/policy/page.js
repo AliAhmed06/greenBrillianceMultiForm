@@ -13,7 +13,7 @@ const PrivacyPolicyPage = () => {
         <h5 className="font-semibold pt-3">Effective Date: February 2, 2022</h5>
         <h5 className="font-semibold">Last Reviewed on: January 3, 2023</h5>
         <p>
-          We at greenbrilliance.org DBA of Esolarus LLC, understand that you
+          We at greenbrilliance, understand that you
           value your privacy and we strive to respect that privacy when you are
           using our services. This Privacy Policy describes what information we
           gather from you, how we use that information, and what we do to
